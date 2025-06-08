@@ -1,0 +1,28 @@
+# Visual Studio
+*.suo
+*.user
+*.VC.db
+*.opendb
+*.log
+*.ipch
+*.tlog
+*.lastbuildstate
+.vs/
+
+# 빌드 결과물
+build/
+
+# OpenSSL DLL (예외적으로 2개만 포함)
+lib/*.dll
+!lib/libssl-3-x64.dll
+!lib/libcrypto-3-x64.dll
+
+# 인증서 (보안상 무시)
+.cert/
+
+# 실행파일
+*.exe
+*.pdb
+*.obj
+*.ilk
+*.idb

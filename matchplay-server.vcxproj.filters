@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\libcrypto-3-x64.dll" />
+    <None Include="lib\libssl-3-x64.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\libcrypto.lib" />
+    <Library Include="lib\libssl.lib" />
+  </ItemGroup>
+</Project>
