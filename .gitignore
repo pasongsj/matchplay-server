@@ -26,3 +26,4 @@ lib/*.dll
 *.obj
 *.ilk
 *.idb
+"src/x64/Debug/Common.pch" 

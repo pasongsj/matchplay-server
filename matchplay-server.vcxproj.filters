@@ -2,6 +2,11 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\net\TcpServer.cpp" />
+    <ClCompile Include="src\net\TcpSession.cpp" />
+    <ClCompile Include="src\Common.cpp" />
+    <ClCompile Include="src\utils\logger\Logger.cpp" />
+    <ClCompile Include="src\net\TcpClient.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="lib\libcrypto-3-x64.dll" />
@@ -10,5 +15,15 @@
   <ItemGroup>
     <Library Include="lib\libcrypto.lib" />
     <Library Include="lib\libssl.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\net\TcpServer.h" />
+    <ClInclude Include="src\net\TcpSession.h" />
+    <ClInclude Include="src\ThreadUtil.h" />
+    <ClInclude Include="src\Common.h" />
+    <ClInclude Include="src\utils\ThreadUtil.h" />
+    <ClInclude Include="src\utils\logger\LogMacros.h" />
+    <ClInclude Include="src\utils\logger\Logger.h" />
+    <ClInclude Include="src\net\TcpClient.h" />
   </ItemGroup>
 </Project>
