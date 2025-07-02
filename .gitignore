@@ -27,3 +27,9 @@ lib/*.dll
 *.ilk
 *.idb
 "src/x64/Debug/Common.pch" 
+
+# 다운로드 임시 디렉터리
+build/openssl_tmp/
+
+# 전체 OpenSSL 소스 무시
+lib/ssl/include/

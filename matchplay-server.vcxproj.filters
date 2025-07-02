@@ -9,14 +9,6 @@
     <ClCompile Include="src\net\TcpClient.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="lib\libcrypto-3-x64.dll" />
-    <None Include="lib\libssl-3-x64.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="lib\libcrypto.lib" />
-    <Library Include="lib\libssl.lib" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="src\net\TcpServer.h" />
     <ClInclude Include="src\net\TcpSession.h" />
     <ClInclude Include="src\ThreadUtil.h" />
@@ -25,5 +17,6 @@
     <ClInclude Include="src\utils\logger\LogMacros.h" />
     <ClInclude Include="src\utils\logger\Logger.h" />
     <ClInclude Include="src\net\TcpClient.h" />
+    <ClInclude Include="lib\magic_enum\magic_enum.hpp" />
   </ItemGroup>
 </Project>

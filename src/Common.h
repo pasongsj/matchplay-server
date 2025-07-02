@@ -5,3 +5,6 @@
 
 // 로그 매크로
 #include "utils/logger/LogMacros.h"
+
+// 프로젝트 명
+#define PROJECT_NAME "matchplay-server/"

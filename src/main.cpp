@@ -1,8 +1,7 @@
 #include "Common.h"
-#include "net/TcpClient.h"
-#include "net/TcpServer.h"
-#include "utils/logger/Logger.h"
-
+#include <net/TcpClient.h>
+#include <net/TcpServer.h>
+#include <utils/logger/Logger.h>
 #include <iostream>
 #include <string>
 #include <thread>
@@ -56,7 +55,7 @@ void RunClientMode() {
 }
 
 int main() {
-    Logger::Instance().SetMode(LogMode::TRACE);
+    Logger::GetInstance().SetLogLevel(LogLevel::TRACE);
 
     std::cout << "[main] 서버(s) 또는 클라이언트(c) 모드를 선택하세요: ";
     char mode;

@@ -57,17 +57,17 @@ void TcpClient::Run() {
 
         int received = recv(m_socket, buffer, sizeof(buffer) - 1, 0);
         if (received <= 0) {
-            LOG_INFO("¼­¹ö ¿¬°á Á¾·á °¨Áö");
+            LOG_INFO("ì„œë²„ ì—°ê²° ì¢…ë£Œ ê°ì§€");
             break;
         }
 
         buffer[received] = '\0';
-        LOG_INFO("¼­¹ö·ÎºÎÅÍ ¼ö½Å: {}", buffer);
+        LOG_INFO("ì„œë²„ë¡œë¶€í„° ìˆ˜ì‹ : {}", buffer);
     }
 }
 
 void TcpClient::Disconnect()
 {
     m_running = false;
-    shutdown(m_socket, SD_BOTH);  // °­Á¦·Î recv() ºüÁ®³ª¿À°Ô
+    shutdown(m_socket, SD_BOTH);  // ê°•ì œë¡œ recv() ë¹ ì ¸ë‚˜ì˜¤ê²Œ
 }
